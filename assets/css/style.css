@@ -226,7 +226,7 @@ a:hover {
   width: 40px;
   font-size: 1.2rem;
   border-radius: 50%;
-  line-height: 1.6;
+  line-height: 2;
   margin: 0 15px 0 0;
   box-shadow: 0 0 0 3px #0078ff;
   transition: all 500ms ease;
@@ -1130,7 +1130,7 @@ a:hover {
 # Contact
 --------------------------------------------------------------*/
 .footer-paralax {
-  padding: 4rem 0 0 0;
+  padding: 3rem 0 3rem 0;
 }
 
 .contact-mf {
@@ -1203,7 +1203,7 @@ a:hover {
 }
 
 .php-email-form button[type=submit] {
-  background: #0078ff;
+  background: #000;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1446,7 +1446,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: #000;
 }
 
 footer .copyright {
