@@ -1061,7 +1061,20 @@ a:hover {
 .hidden {
   display: none;
 }
-
+.pagination {
+  display: none;
+}
+.filter button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+.filter button {
+  padding: 4px 30px;
+  border: none;
+  background: #000000;
+  color: #fff;
+  border-radius: 50px;
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
