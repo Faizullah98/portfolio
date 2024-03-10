@@ -44,15 +44,30 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+  <div id="hero" class="hero">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Faizullah Hussain</h1>
-          <p class="hero-subtitle"><span class="typed"
-              data-typed-items="Designer, Developer, Freelancer, WordPress Developer"></span></p>
+          <div class="row align-items-center">
+            <div class="col-md-7 col-sm-12">
+              <h1 class="hero-banner-title">Hi, I am <br>Faizullah Hussain</h1>
+              <p class="hero-subtitle">I am a <span class="typed"
+                  data-typed-items="Software Engineer,Front-end Developer, WordPress Developer"></span></p>
+              <p class="lead">Passionate frontend developer with expertise in HTML, CSS, and JavaScript. Dedicated to
+                crafting
+                user-friendly interfaces that prioritize responsiveness and accessibility. Collaborative team player
+                experienced in transforming designs into elegant, efficient digital experiences. Committed to staying
+                updated on emerging technologies to drive innovation in web development.</p>
+
+              <a class="cv-btn"
+                href="https://drive.google.com/file/d/1oLCe9OqM5AAPi7Y2ox_6k5LbxwMpsa2c/view?usp=sharing">Check CV</a>
+            </div>
+
+            <div class="col-md-5 col-sm-12 img-style">
+              <img src="./assets/img/profile image.png" alt="profile image">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -121,10 +136,16 @@
                       </h5>
                     </div>
                     <p class="lead">
-                      In my role as a developer, I have honed my skills in HTML, CSS, Bootstrap, Sass, and WordPress to create visually stunning and responsive websites. My expertise allows me to seamlessly convert design formats into dynamic HTML, ensuring pixel-perfect precision. I am committed to delivering high-quality solutions and am constantly updating my skills to stay abreast of the latest industry trends. 
+                      In my role as a developer, I have honed my skills in HTML, CSS, Bootstrap, Sass, and WordPress to
+                      create visually stunning and responsive websites. My expertise allows me to seamlessly convert
+                      design formats into dynamic HTML, ensuring pixel-perfect precision. I am committed to delivering
+                      high-quality solutions and am constantly updating my skills to stay abreast of the latest industry
+                      trends.
                     </p>
                     <p class="lead">
-                      My passion for technology, combined with my dedication to excellence, makes me a valuable asset to any project. I am eager to contribute my expertise and drive to create impactful and user-centric web experiences.
+                      My passion for technology, combined with my dedication to excellence, makes me a valuable asset to
+                      any project. I am eager to contribute my expertise and drive to create impactful and user-centric
+                      web experiences.
                     </p>
                   </div>
                 </div>
@@ -201,9 +222,6 @@
               <h3 class="title-a">
                 Portfolio
               </h3>
-              <!-- <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p> -->
               <div class="line-mf"></div>
             </div>
           </div>
@@ -213,7 +231,6 @@
           <button onclick="filter('e-commerce')">E-Commerce</button>
           <button onclick="filter('blog-website')">Blog Website</button>
           <button onclick="filter('other-website')">Other Website</button>
-          <!-- Add more buttons for other categories if needed -->
         </div>
 
         <div class="row">
@@ -464,10 +481,10 @@
                         <li><span class="bi bi-geo-alt"></span> House 91 Gulshan Park Lahore</li>
                         <li><span class="bi bi-phone"></span> 0311 92078 99</li>
                         <li><span class="bi bi-envelope"></span>
-                           <a href="mailto:faizibaltistani@gamil.com">
+                          <a href="mailto:faizibaltistani@gamil.com">
                             faizibaltistani@gmail.com
-                           </a>
-                          </li>
+                          </a>
+                        </li>
                       </ul>
                     </div>
                     <div class="socials">
@@ -537,9 +554,20 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <div class="credits">
-              Designed by <a href="https://faizullah98.github.io/practicewebsite/">Faizullah Hussain</a>
+            <div class="social">
+              <a href="https://www.facebook.com/faizullah.hussain.1/">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/faizullah-hussain/">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/Faizullah98" target="_blank">
+                <i class="bi bi-github"></i>
+              </a>
             </div>
+          </div>
+          <div class="credits mt-4">
+            Designed by <a href="https://faizullah98.github.io/practicewebsite/">Faizullah Hussain</a>
           </div>
         </div>
       </div>
@@ -549,87 +577,87 @@
   <script>
     // Define the filter function in the global scope
     function filter(category) {
-  category = category || 'all';
+      category = category || 'all';
 
-  const workItems = document.querySelectorAll('.work-item');
-  let filteredItems = [];
+      const workItems = document.querySelectorAll('.work-item');
+      let filteredItems = [];
 
-  workItems.forEach(function(workItem, index) {
-    if (category === 'all' || workItem.classList.contains(category)) {
-      workItem.classList.toggle('hidden', false);
-      filteredItems.push(workItem);
-    } else {
-      workItem.classList.toggle('hidden', true);
+      workItems.forEach(function (workItem, index) {
+        if (category === 'all' || workItem.classList.contains(category)) {
+          workItem.classList.toggle('hidden', false);
+          filteredItems.push(workItem);
+        } else {
+          workItem.classList.toggle('hidden', true);
+        }
+      });
+
+      // Show the first page initially
+      currentPage = 0;
+      showPage(filteredItems); // Call showPage with filteredItems
+
+      // Show/hide pagination based on the selected category
+      const pagination = document.querySelector('.pagination');
+      pagination.style.display = category === 'all' ? 'block' : 'none';
+
+      // Remove active class from all buttons and add it to the clicked button
+      const filterButtons = document.querySelectorAll('.filter button');
+      filterButtons.forEach(button => button.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // Check if the current page is greater than the number of pages after filtering
+      const numPages = Math.ceil(filteredItems.length / 6);
+      if (currentPage >= numPages) {
+        currentPage = numPages - 1;
+        showPage(filteredItems);
+      }
     }
-  });
-
-  // Show the first page initially
-  currentPage = 0;
-  showPage(filteredItems); // Call showPage with filteredItems
-
-  // Show/hide pagination based on the selected category
-  const pagination = document.querySelector('.pagination');
-  pagination.style.display = category === 'all' ? 'block' : 'none';
-
-  // Remove active class from all buttons and add it to the clicked button
-  const filterButtons = document.querySelectorAll('.filter button');
-  filterButtons.forEach(button => button.classList.remove('active'));
-  event.target.classList.add('active');
-
-  // Check if the current page is greater than the number of pages after filtering
-  const numPages = Math.ceil(filteredItems.length / 6);
-  if (currentPage >= numPages) {
-    currentPage = numPages - 1;
-    showPage(filteredItems);
-  }
-}
 
 
-  
+
     // Pagination functions
     let currentPage = 0;
-  
+
     function prevPage() {
       if (currentPage > 0) {
         currentPage--;
         showPage();
       }
     }
-  
+
     function nextPage() {
       const workItems = document.querySelectorAll('.work-item');
       const numPages = Math.ceil(workItems.length / 6);
-  
+
       if (currentPage < numPages - 1) {
         currentPage++;
         showPage();
       }
     }
-  
+
     function showPage(filteredItems) {
-  const workItems = filteredItems || document.querySelectorAll('.work-item');
+      const workItems = filteredItems || document.querySelectorAll('.work-item');
 
-  workItems.forEach(function(workItem, index) {
-    if (index >= currentPage * 6 && index < (currentPage + 1) * 6) {
-      workItem.classList.remove('hidden');
-    } else {
-      workItem.classList.add('hidden');
-    }
-  });
+      workItems.forEach(function (workItem, index) {
+        if (index >= currentPage * 6 && index < (currentPage + 1) * 6) {
+          workItem.classList.remove('hidden');
+        } else {
+          workItem.classList.add('hidden');
+        }
+      });
 
-  // Hide projects after the first 6
-  if (currentPage === 0) {
-    workItems.forEach(function(workItem, index) {
-      if (index >= 6) {
-        workItem.classList.add('hidden');
+      // Hide projects after the first 6
+      if (currentPage === 0) {
+        workItems.forEach(function (workItem, index) {
+          if (index >= 6) {
+            workItem.classList.add('hidden');
+          }
+        });
       }
-    });
-  }
-}
+    }
 
-// open default 
+    // open default 
 
-document.getElementById("openDefault").click();
+    document.getElementById("openDefault").click();
   </script>
 
   <div id="preloader"></div>
