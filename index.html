@@ -209,7 +209,7 @@
           </div>
         </div>
         <div class="filter">
-          <button class="active" onclick="filter('all')">All</button>
+          <button class="active" onclick="filter('all')" id="openDefault">All</button>
           <button onclick="filter('e-commerce')">E-Commerce</button>
           <button onclick="filter('blog-website')">Blog Website</button>
           <button onclick="filter('other-website')">Other Website</button>
@@ -627,6 +627,9 @@
   }
 }
 
+// open default 
+
+document.getElementById("openDefault").click();
   </script>
 
   <div id="preloader"></div>
