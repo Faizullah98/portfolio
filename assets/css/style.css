@@ -747,6 +747,22 @@ span.typed,
   display: block;
   float: right;
 }
+.img-style{
+ position: relative;
+ animation: move 2s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+      transform: translate(0, 0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
 
 .cv-btn {
   background: #6181ff;
@@ -810,18 +826,6 @@ span.typed,
   font-size: 3rem;
 }
 
-/* @media (min-width: 768px) {
-  .hero{
-    height: 100vh;
-  }
-  .hero-single .hero-title {
-    font-size: 3.5rem;
-  }
-  .hero .hero-banner-title {
-    color: #fff;
-    font-size: 2rem;
-  }
-} */
 
 @media (max-width: 767px) {
   .hero {
@@ -1119,6 +1123,7 @@ span.typed,
   color: #fff;
   border-radius: 50px;
   margin: 6px;
+  transition: 0.5s;
 }
 /*--------------------------------------------------------------
 # Testimonials
