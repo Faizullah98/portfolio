@@ -1,782 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>My Portfolio</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>My Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo"><a href="index.html">DevFolio</a></h1>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#work">Work</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
 
-</head>
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="hero">
+      <div class="overlay-itro"></div>
+      <div class="hero-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-sm-12">
+                <h1 class="hero-banner-title">
+                  Hi, I am <br />Faizullah Hussain
+                </h1>
+                <p class="hero-subtitle">
+                  I am a
+                  <span
+                    class="typed"
+                    data-typed-items="Software Engineer,Front-end Developer, WordPress Developer"
+                  ></span>
+                </p>
+                <p class="lead">
+                  Passionate frontend developer with expertise in HTML, CSS, and
+                  JavaScript. Dedicated to crafting user-friendly interfaces
+                  that prioritize responsiveness and accessibility.
+                  Collaborative team player experienced in transforming designs
+                  into elegant, efficient digital experiences. Committed to
+                  staying updated on emerging technologies to drive innovation
+                  in web development.
+                </p>
 
-<body>
+                <a
+                  class="cv-btn"
+                  href="https://drive.google.com/file/d/1oLCe9OqM5AAPi7Y2ox_6k5LbxwMpsa2c/view?usp=sharing"
+                  >Check CV</a
+                >
+              </div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.html">DevFolio</a></h1>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+              <div class="col-md-5 col-sm-12 img-style">
+                <img src="./assets/img/profile image.png" alt="profile image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </header><!-- End Header -->
+    <!-- End Hero Section -->
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about-mf sect-pt4 route">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-7 col-sm-12">
-              <h1 class="hero-banner-title">Hi, I am <br>Faizullah Hussain</h1>
-              <p class="hero-subtitle">I am a <span class="typed"
-                  data-typed-items="Software Engineer,Front-end Developer, WordPress Developer"></span></p>
-              <p class="lead">Passionate frontend developer with expertise in HTML, CSS, and JavaScript. Dedicated to
-                crafting
-                user-friendly interfaces that prioritize responsiveness and accessibility. Collaborative team player
-                experienced in transforming designs into elegant, efficient digital experiences. Committed to staying
-                updated on emerging technologies to drive innovation in web development.</p>
-
-              <a class="cv-btn"
-                href="https://drive.google.com/file/d/1oLCe9OqM5AAPi7Y2ox_6k5LbxwMpsa2c/view?usp=sharing">Check CV</a>
-            </div>
-
-            <div class="col-md-5 col-sm-12 img-style">
-              <img src="./assets/img/profile image.png" alt="profile image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Hero Section -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt=""
-                          width="200px">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Faizullah Hussain</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Front-end Developer</span></p>
-                        <p><span class="title-s">Email: </span> <span>faizhussain273@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>0311 92078 99</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skills</p>
-                    <span>HTML</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>CSS3</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Bootstrap</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Sass</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JAVASCRIPT</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      In my role as a developer, I have honed my skills in HTML, CSS, Bootstrap, Sass, and WordPress to
-                      create visually stunning and responsive websites. My expertise allows me to seamlessly convert
-                      design formats into dynamic HTML, ensuring pixel-perfect precision. I am committed to delivering
-                      high-quality solutions and am constantly updating my skills to stay abreast of the latest industry
-                      trends.
-                    </p>
-                    <p class="lead">
-                      My passion for technology, combined with my dedication to excellence, makes me a valuable asset to
-                      any project. I am eager to contribute my expertise and drive to create impactful and user-centric
-                      web experiences.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="filter">
-          <button class="active" onclick="filter('all')" id="openDefault">All Projects</button>
-        </div>
-
-        <div class="row">
-
-          <div class="col-md-4 work-item other-website">
-            <div class="work-box">
-              <a href="assets/img/home renovation website.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/home renovation website.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Home Renovation</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://lonexgeneralcontractors.ca/" target="_blank">Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item other-website">
-            <div class="work-box">
-              <a href="assets/img/rubranking.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/rubranking.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Rub Ranking</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://www.rubranking.io/" target="_blank">Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item other-website">
-            <div class="work-box">
-              <a href="assets/img/techtrends.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/techtrends.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Tech Trends Insigth</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://techtrendsinsigth.com/" target="_blank">Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item other-website">
-            <div class="work-box">
-              <a href="assets/img/inum.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/inum.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Inum</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://inum.com/" target="_blank">Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-4 work-item other-website">
-            <div class="work-box">
-              <a href="assets/img/e-green-uk.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/e-green-uk.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Emerald Green Energy</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://e-green.co.uk/" target="_blank">Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-4 work-item e-commerce">
-            <div class="work-box">
-              <a href="assets/img/dunebuggy.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/dunebuggy.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Dune Buggy</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://www.dubaidunebuggy.ae/" target="_blank">Visit Site
-                        <span class="bi bi-box-arrow-up-right ml-2"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item blog-website">
-            <div class="work-box">
-              <a href="assets/img/msf-blog.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/msf-blog.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">MSF Bloging Site</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://msfblog.com/" target="_blank">Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item blog-website">
-            <div class="work-box">
-              <a href="assets/img/voipblog.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-8.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Tech Data Science</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://cloud-science.com/" target="_blank"> Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item other-website">
-            <div class="work-box">
-              <a href="assets/img/voipblog.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-9.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Car Service Website</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://platinumexecutivetravels.ca/" target="_blank"> Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-4 work-item other-website">
-            <div class="work-box">
-              <a href="assets/img/voipblog.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-11.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Desert Safari Adventure</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://desertsafariday.com/" target="_blank"> Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item e-commerce">
-            <div class="work-box">
-              <a href="assets/img/e-com-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/e-com-2.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Online Pharmacy Store</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://onlinepharmacy24.com/" target="_blank">Visit Site <span
-                          class="bi bi-box-arrow-up-right"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-4 work-item e-commerce">
-            <div class="work-box">
-              <a href="assets/img/prime-commerce.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/prime-commerce.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Prime Commerce</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://primecommerce.net/" target="_blank">Visit Site <span
-                          class="bi bi-box-arrow-up-right"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item blog-website">
-            <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Latest News & Updates</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://www.workjo.com/" target="_blank"> Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-4 work-item blog-website">
-            <div class="work-box">
-              <a href="assets/img/digitalportal.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/digitalportal.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Digital Portal</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://digitalportal.co/" target="_blank"> Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item other-website">
-            <div class="work-box">
-              <a href="assets/img/harleymindcare.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/harleymindcare.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Harley Mind Care</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://www.harleymindcare.com/" target="_blank"> Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item other-website">
-            <div class="work-box">
-              <a href="assets/img/voip.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/voip.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">VoIP Business</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://www.voipbusiness.com/" target="_blank"> Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item other-website">
-            <div class="work-box">
-              <a href="assets/img/remotepro.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/remotepro.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Remote Pro</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://remote.pro/" target="_blank"> Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item blog-website">
-            <div class="work-box">
-              <a href="assets/img/wanio.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/wanio.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">WAN.io</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://www.wan.io/" target="_blank"> Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 work-item blog-website">
-            <div class="work-box">
-              <a href="assets/img/voipblog.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/voipblog.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">VoIP Blog</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://www.voipblog.com/" target="_blank"> Visit Site
-                        <span class="bi bi-box-arrow-up-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pagination ml-sm-2">
-            <button onclick="prevPage()"><i class="bi bi-chevron-left"></i></button>
-            <button onclick="nextPage()"><i class="bi bi-chevron-right"></i></button>
-          </div>
-          <!-- Add more work items with appropriate categories -->
-        </div>
-      </div>
-    </section>
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> House 91 Gulshan Park Lahore</li>
-                        <li><span class="bi bi-phone"></span> 0311 92078 99</li>
-                        <li><span class="bi bi-envelope"></span>
-                          <a href="mailto:faizibaltistani@gamil.com">
-                            faizhussain273@gmail.com
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href="https://www.facebook.com/faizullah.hussain.1/"><span class="ico-circle"><i
-                                class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <!-- <li><a href=""><span class="ico-circle"><i class="fa-brands fa-github-alt"></i></span></a></li> -->
-                        <li><a href="https://www.linkedin.com/in/faizullah-hussain/"><span class="ico-circle"><i
-                                class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
+                    <div class="row">
+                      <div class="col-sm-6 col-md-5">
+                        <div class="about-img">
+                          <img
+                            src="assets/img/testimonial-2.jpg"
+                            class="img-fluid rounded b-shadow-a"
+                            alt=""
+                            width="200px"
+                          />
                         </div>
-                      </form>
+                      </div>
+                      <div class="col-sm-6 col-md-7">
+                        <div class="about-info">
+                          <p>
+                            <span class="title-s">Name: </span>
+                            <span>Faizullah Hussain</span>
+                          </p>
+                          <p>
+                            <span class="title-s">Profile: </span>
+                            <span>Front-end Developer</span>
+                          </p>
+                          <p>
+                            <span class="title-s">Email: </span>
+                            <span>faizhussain273@gmail.com</span>
+                          </p>
+                          <p>
+                            <span class="title-s">Phone: </span>
+                            <span>0311 92078 99</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-mf">
+                      <p class="title-s">Skills</p>
+                      <span>HTML</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 85%"
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span>CSS3</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 75%"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span>Bootstrap</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 75%"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span>Sass</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 75%"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span>JAVASCRIPT</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 30%"
+                          aria-valuenow="90"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about-me pt-4 pt-md-0">
+                      <div class="title-box-2">
+                        <h5 class="title-left">About me</h5>
+                      </div>
+                      <p class="lead">
+                        In my role as a developer, I have honed my skills in
+                        HTML, CSS, Bootstrap, Sass, and WordPress to create
+                        visually stunning and responsive websites. My expertise
+                        allows me to seamlessly convert design formats into
+                        dynamic HTML, ensuring pixel-perfect precision. I am
+                        committed to delivering high-quality solutions and am
+                        constantly updating my skills to stay abreast of the
+                        latest industry trends.
+                      </p>
+                      <p class="lead">
+                        My passion for technology, combined with my dedication
+                        to excellence, makes me a valuable asset to any project.
+                        I am eager to contribute my expertise and drive to
+                        create impactful and user-centric web experiences.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -784,138 +223,1037 @@
             </div>
           </div>
         </div>
-      </div>
-    </section><!-- End Contact Section -->
+      </section>
+      <!-- End About Section -->
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <div class="social">
-              <a href="https://www.facebook.com/faizullah.hussain.1/">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/faizullah-hussain/">
-                <i class="bi bi-linkedin"></i>
-              </a>
-              <a href="https://github.com/Faizullah98" target="_blank">
-                <i class="bi bi-github"></i>
-              </a>
+      <!-- ======= Counter Section ======= -->
+      <div
+        class="section-counter paralax-mf bg-image"
+        style="background-image: url(assets/img/counters-bg.jpg)"
+      >
+        <div class="overlay-mf"></div>
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-check"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p
+                    data-purecounter-start="0"
+                    data-purecounter-end="45"
+                    data-purecounter-duration="1"
+                    class="counter purecounter"
+                  ></p>
+                  <span class="counter-text">WORKS COMPLETED</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="credits mt-4">
-            Designed by <a href="https://faizullah98.github.io/practicewebsite/">Faizullah Hussain</a>
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"
+                    ><i class="bi bi-journal-richtext"></i
+                  ></span>
+                </div>
+                <div class="counter-num">
+                  <p
+                    data-purecounter-start="0"
+                    data-purecounter-end="2"
+                    data-purecounter-duration="1"
+                    class="counter purecounter"
+                  ></p>
+                  <span class="counter-text">YEARS OF EXPERIENCE</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-people"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p
+                    data-purecounter-start="0"
+                    data-purecounter-end="30"
+                    data-purecounter-duration="1"
+                    class="counter purecounter"
+                  ></p>
+                  <span class="counter-text">TOTAL CLIENTS</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-award"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p
+                    data-purecounter-start="0"
+                    data-purecounter-end="2"
+                    data-purecounter-duration="1"
+                    class="counter purecounter"
+                  ></p>
+                  <span class="counter-text">AWARD WON</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer><!-- End  Footer -->
+      <!-- End Counter Section -->
 
-  <script>
-    // Define the filter function in the global scope
-    function filter(category) {
-      category = category || 'all';
+      <!-- ======= Portfolio Section ======= -->
+      <section id="work" class="portfolio-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">Portfolio</h3>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="filter">
+            <button class="active" onclick="filter('all')" id="openDefault">
+              All Projects
+            </button>
+          </div>
 
-      const workItems = document.querySelectorAll('.work-item');
-      let filteredItems = [];
+          <div class="row">
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/home renovation website.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/home renovation website.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Home Renovation</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a
+                          href="https://lonexgeneralcontractors.ca/"
+                          target="_blank"
+                          >Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      workItems.forEach(function (workItem, index) {
-        if (category === 'all' || workItem.classList.contains(category)) {
-          workItem.classList.toggle('hidden', false);
-          filteredItems.push(workItem);
-        } else {
-          workItem.classList.toggle('hidden', true);
-        }
-      });
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/rubranking.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/rubranking.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Rub Ranking</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://www.rubranking.io/" target="_blank"
+                          >Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      // Show the first page initially
-      currentPage = 0;
-      showPage(filteredItems); // Call showPage with filteredItems
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/lbms.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="assets/img/lbms.png" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">LBMS</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://lbms.ae/" target="_blank"
+                          >Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      // Show/hide pagination based on the selected category
-      const pagination = document.querySelector('.pagination');
-      pagination.style.display = category === 'all' ? 'block' : 'none';
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/techtrends.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/techtrends.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Tech Trends Insigth</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://techtrendsinsigth.com/" target="_blank"
+                          >Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      // Remove active class from all buttons and add it to the clicked button
-      const filterButtons = document.querySelectorAll('.filter button');
-      filterButtons.forEach(button => button.classList.remove('active'));
-      event.target.classList.add('active');
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/inum.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="assets/img/inum.png" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Inum</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://inum.com/" target="_blank"
+                          >Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      // Check if the current page is greater than the number of pages after filtering
-      const numPages = Math.ceil(filteredItems.length / 6);
-      if (currentPage >= numPages) {
-        currentPage = numPages - 1;
-        showPage(filteredItems);
-      }
-    }
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/e-green-uk.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/e-green-uk.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Emerald Green Energy</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://e-green.co.uk/" target="_blank"
+                          >Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-4 work-item e-commerce">
+              <div class="work-box">
+                <a
+                  href="assets/img/dunebuggy.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/dunebuggy.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Dune Buggy</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://www.dubaidunebuggy.ae/" target="_blank"
+                          >Visit Site
+                          <span class="bi bi-box-arrow-up-right ml-2"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-4 work-item blog-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/msf-blog.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/msf-blog.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">MSF Bloging Site</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://msfblog.com/" target="_blank"
+                          >Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    // Pagination functions
-    let currentPage = 0;
+            <div class="col-md-4 work-item blog-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/voipblog.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="assets/img/work-8.png" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Tech Data Science</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://cloud-science.com/" target="_blank">
+                          Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    function prevPage() {
-      if (currentPage > 0) {
-        currentPage--;
-        showPage();
-      }
-    }
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/voipblog.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="assets/img/work-9.png" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Car Service Website</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a
+                          href="https://platinumexecutivetravels.ca/"
+                          target="_blank"
+                        >
+                          Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    function nextPage() {
-      const workItems = document.querySelectorAll('.work-item');
-      const numPages = Math.ceil(workItems.length / 6);
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/voipblog.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/work-11.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Desert Safari Adventure</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://desertsafariday.com/" target="_blank">
+                          Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      if (currentPage < numPages - 1) {
-        currentPage++;
-        showPage();
-      }
-    }
+            <div class="col-md-4 work-item e-commerce">
+              <div class="work-box">
+                <a
+                  href="assets/img/e-com-2.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/e-com-2.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Online Pharmacy Store</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://onlinepharmacy24.com/" target="_blank"
+                          >Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    function showPage(filteredItems) {
-      const workItems = filteredItems || document.querySelectorAll('.work-item');
+            <div class="col-md-4 work-item e-commerce">
+              <div class="work-box">
+                <a
+                  href="assets/img/prime-commerce.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/prime-commerce.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Prime Commerce</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://primecommerce.net/" target="_blank"
+                          >Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      workItems.forEach(function (workItem, index) {
-        if (index >= currentPage * 6 && index < (currentPage + 1) * 6) {
-          workItem.classList.remove('hidden');
-        } else {
-          workItem.classList.add('hidden');
-        }
-      });
+            <div class="col-md-4 work-item blog-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/work-2.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="assets/img/work-2.jpg" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Latest News & Updates</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://www.workjo.com/" target="_blank">
+                          Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      // Hide projects after the first 6
-      if (currentPage === 0) {
+            <div class="col-md-4 work-item blog-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/digitalportal.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/digitalportal.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Digital Portal</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://digitalportal.co/" target="_blank">
+                          Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/harleymindcare.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/harleymindcare.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Harley Mind Care</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a
+                          href="https://www.harleymindcare.com/"
+                          target="_blank"
+                        >
+                          Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/voip.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="assets/img/voip.png" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">VoIP Business</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://www.voipbusiness.com/" target="_blank">
+                          Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 work-item other-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/remotepro.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/remotepro.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Remote Pro</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://remote.pro/" target="_blank">
+                          Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 work-item blog-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/wanio.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="assets/img/wanio.png" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">WAN.io</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://www.wan.io/" target="_blank">
+                          Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 work-item blog-website">
+              <div class="work-box">
+                <a
+                  href="assets/img/voipblog.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="assets/img/voipblog.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">VoIP Blog</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://www.voipblog.com/" target="_blank">
+                          Visit Site
+                          <span class="bi bi-box-arrow-up-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pagination ml-sm-2">
+              <button onclick="prevPage()">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button onclick="nextPage()">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+            <!-- Add more work items with appropriate categories -->
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section
+        id="contact"
+        class="paralax-mf footer-paralax bg-image sect-mt4 route"
+        style="background-image: url(assets/img/overlay-bg.jpg)"
+      >
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">Get in Touch</h5>
+                      </div>
+                      <div class="more-info">
+                        <ul class="list-ico">
+                          <li>
+                            <span class="bi bi-geo-alt"></span> House 91 Gulshan
+                            Park Lahore
+                          </li>
+                          <li>
+                            <span class="bi bi-phone"></span> 0311 92078 99
+                          </li>
+                          <li>
+                            <span class="bi bi-envelope"></span>
+                            <a href="mailto:faizibaltistani@gamil.com">
+                              faizhussain273@gmail.com
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="socials">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://www.facebook.com/faizullah.hussain.1/"
+                              ><span class="ico-circle"
+                                ><i class="bi bi-facebook"></i></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href=""
+                              ><span class="ico-circle"
+                                ><i class="bi bi-instagram"></i></span
+                            ></a>
+                          </li>
+                          <!-- <li><a href=""><span class="ico-circle"><i class="fa-brands fa-github-alt"></i></span></a></li> -->
+                          <li>
+                            <a
+                              href="https://www.linkedin.com/in/faizullah-hussain/"
+                              ><span class="ico-circle"
+                                ><i class="bi bi-linkedin"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div>
+                        <form
+                          action="forms/contact.php"
+                          method="post"
+                          role="form"
+                          class="php-email-form"
+                        >
+                          <div class="row">
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  name="name"
+                                  class="form-control"
+                                  id="name"
+                                  placeholder="Your Name"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  name="email"
+                                  id="email"
+                                  placeholder="Your Email"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  name="subject"
+                                  id="subject"
+                                  placeholder="Subject"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea
+                                  class="form-control"
+                                  name="message"
+                                  rows="5"
+                                  placeholder="Message"
+                                  required
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-12 text-center my-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">
+                                Your message has been sent. Thank you!
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <button
+                                type="submit"
+                                class="button button-a button-big button-rouded"
+                              >
+                                Send Message
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <div class="social">
+                <a href="https://www.facebook.com/faizullah.hussain.1/">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/faizullah-hussain/">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/Faizullah98" target="_blank">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="credits mt-4">
+              Designed by
+              <a href="https://faizullah98.github.io/practicewebsite/"
+                >Faizullah Hussain</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <script>
+      // Define the filter function in the global scope
+      function filter(category) {
+        category = category || "all";
+
+        const workItems = document.querySelectorAll(".work-item");
+        let filteredItems = [];
+
         workItems.forEach(function (workItem, index) {
-          if (index >= 6) {
-            workItem.classList.add('hidden');
+          if (category === "all" || workItem.classList.contains(category)) {
+            workItem.classList.toggle("hidden", false);
+            filteredItems.push(workItem);
+          } else {
+            workItem.classList.toggle("hidden", true);
           }
         });
+
+        // Show the first page initially
+        currentPage = 0;
+        showPage(filteredItems); // Call showPage with filteredItems
+
+        // Show/hide pagination based on the selected category
+        const pagination = document.querySelector(".pagination");
+        pagination.style.display = category === "all" ? "block" : "none";
+
+        // Remove active class from all buttons and add it to the clicked button
+        const filterButtons = document.querySelectorAll(".filter button");
+        filterButtons.forEach((button) => button.classList.remove("active"));
+        event.target.classList.add("active");
+
+        // Check if the current page is greater than the number of pages after filtering
+        const numPages = Math.ceil(filteredItems.length / 6);
+        if (currentPage >= numPages) {
+          currentPage = numPages - 1;
+          showPage(filteredItems);
+        }
       }
-    }
 
-    // open default 
+      // Pagination functions
+      let currentPage = 0;
 
-    document.getElementById("openDefault").click();
-  </script>
+      function prevPage() {
+        if (currentPage > 0) {
+          currentPage--;
+          showPage();
+        }
+      }
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+      function nextPage() {
+        const workItems = document.querySelectorAll(".work-item");
+        const numPages = Math.ceil(workItems.length / 6);
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+        if (currentPage < numPages - 1) {
+          currentPage++;
+          showPage();
+        }
+      }
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+      function showPage(filteredItems) {
+        const workItems =
+          filteredItems || document.querySelectorAll(".work-item");
 
-</body>
+        workItems.forEach(function (workItem, index) {
+          if (index >= currentPage * 6 && index < (currentPage + 1) * 6) {
+            workItem.classList.remove("hidden");
+          } else {
+            workItem.classList.add("hidden");
+          }
+        });
 
+        // Hide projects after the first 6
+        if (currentPage === 0) {
+          workItems.forEach(function (workItem, index) {
+            if (index >= 6) {
+              workItem.classList.add("hidden");
+            }
+          });
+        }
+      }
+
+      // open default
+
+      document.getElementById("openDefault").click();
+    </script>
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
